@@ -6,22 +6,40 @@
 </head>
 
 <main>
-  <h1>Post Title</h1>
-  <h2>The subtitle, if you want it</h2>
-  <h4>Today's Date</h4>
+  <h1>Version Control and Git</h1>
+  <h4>June 15, 2015</h4>
 
   <section>
+    <p>  What is version control?  </p>
     <p>
-      Your first paragraph goes here. I'm using Web 2.0 Ipsum to add content. Webtwo ipsum dolor sit amet, eskobo chumby doostang bebo. Nuvvo koofers oooooc voxy klout jaiku palantir flickr insala zinch napster oooj, airbnb mzinga vimeo yuntaa balihoo plickers whrrl edmodo appjet kippt. Yoono imvu hulu eduvant blekko imvu ebay voki napster skype, hipmunk zinch wesabe bubbli ning meebo bitly zlio. Fleck elgg ideeli disqus rovio zillow sifteo blyve jabber, bitly geni zoho foodzie qeyno twones klout jiglu, hipmunk jaiku balihoo plickers heekya eskobo yuntaa. Sococo whrrl plickers movity whrrl zinch voki nuvvo meebo, quora heroku unigo kno wufoo jibjab woopra, groupon yuntaa spock mzinga jumo meebo movity.
-    </p>
-    <p>
-        Lijit groupon ning stypi eskobo blyve ning shopify oooooc, meebo groupon prezi ebay voxy bitly diigo. Spock ifttt skype hipmunk movity whrrl bebo oooj empressr, disqus insala palantir bitly dropio zimbra zinch oooooc etsy, klout spock insala quora omgpop trulia jibjab. Sifteo dogster ebay grockit geni scribd bitly ning unigo, plickers voki mzinga tumblr kaboodle mozy whrrl woopra udemy, foodzie joukuu elgg twitter shopify akismet rovio. Kosmix eduvant woopra dopplr balihoo ning bebo akismet, boxbe vimeo kosmix shopify zappos bitly geni loopt, qeyno disqus sococo squidoo wikia octopart.
-    </p>
-    <p>
-        Kazaa meevee eduvant gsnap movity kosmix kazaa klout jumo, trulia unigo groupon wakoopa spock knewton glogster heroku oooj, ning imvu appjet eskobo zillow twitter rovio. Glogster chegg voxy greplin dopplr voki foodzie xobni weebly odeo, sococo zynga knewton loopt palantir lala blyve tumblr blekko, twones akismet plaxo kippt meebo zillow zooomr insala. Oovoo imeem napster divvyshot zinch imeem voxy shopify, fleck kazaa zinch lanyrd boxbe joost wakoopa nuvvo, orkut elgg heekya sifteo scribd napster. Yammer yoono groupon dopplr cloudera nuvvo eduvant klout, voxy groupon disqus eduvant oooj greplin.
-    </p>
 
-      <!-- copy and paste as many sections as you want to add paragraphs -->
+        Version control is a system for keeping track of individual changes to a file over time.  You can use version control to see who made what change and when.  Each change is usually accompanied by a comment which explains the purpose behind the change, so you can also understand why a given change was made.  
+    </p>
+    <p>
+        Version control is a concept that can be useful for a variety of disciplines, not just software development.  A book author, for example, can track revisions to his work.  If she is not happy with the latest revision of a chapter, she can simply revert back to an earlier version.  At the very least, version control will help protect a user from losing his work.
+    </p>
+    <p>
+        For software deveopment in particular, version control has many useful applications.  First, it can allow multiple developers to work on the same codebase without trampling over each other's changes.  Second, version control can even help an invidual programmer to better organize his work and rollback his mistakes.  For me personally, I know that most of my decisions are likely to be wrong.  Therefore, I like to have at most one decision per commit, which will allow me to most easily roll back decisions that turn out to be wrong.  If I instead lump all of my decisions together into one giant document without version control, I would then have a bunch of wrong decisions lumped together and it may be difficult to tease them apart later.   
+    </p>
+  </section>
+  <section>
+    <p>
+        What is Git?  
+    </p>
+    <p>
+        Git is a version control system (VCS) which offers the functions described above.  Git functions as a distributed file system, which means that users will have their own working copy of the entire repository on their local machine.  They will be making commits to their local copy of the repository and will have to explicitly push their changes to the remote repository.  The advantage of this approach is that every local copy of the repository can effectively serve as a backup for the central remote repository if it were to crash.  
+    </p>
+    <p>
+   What makes Git unique compared to other VCS examples is the way it thinks about and stores data.  Most VCS's represent the data as a series of changes to its files.  So, if I were to add a line to file1, a typical VCS would store my change to file1.  Git, however, does not take this approach.  Instead, Git represents a commit as a snapshot of all the files in my database at the time of my commit.  You can think of it as saving a Word document.  When you save a Word document, you are capturing the state of that document at the precise moment you hit the save button.    
+    </p>
+  </section>
+  <section>
+    <p>
+        What is GitHub? 
+    </p>
+    <p>
+        GitHub serves as a "hub" for storing Git repositories.  As mentioned above, developers explicitly push their local commits to a central remote repository.  GitHub serves as a convenient place to store the remote repository.  The advantage of using Github is that now multiple developers from various parts of the world can collaborate.  They can each check out a local copy of the central GitHub repository, contribute their changes to the codebase and then push back to GitHub.  Github will merge everyone's changes into one unified whole. 
+    </p>
   </section>
 </main>
 
