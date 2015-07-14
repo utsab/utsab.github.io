@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head>
+  <title>Arrays vs. Hashes</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="your-stylesheet-link-here.css">
+</head>
+
+<main>
+  <h1>Ruby Arrays vs. Hashes</h1>
+  <h4>July 13, 2015</h4>
+
+  <section>
+    <p>  <b>Implementation Details</b> </p>
+    <p>
+        The <a href="http://ruby-doc.org/core-2.2.0/Array.html">Ruby docs</a> explain that an Array is "an ordered,integer-indexed collection of any object."
+    </p>
+
+    <p>
+      The key point here when distinguishing an Array from a Hash is the term "integer-indexed".  Each element of an Array is given a specific index, which will be an integer ranging from 0 to the length of the array minus 1.
+    </p>
+    <p>
+        For example, declare an array: <br>
+        <code>my_array = ["Hurrah", 2.0, 10]</code>
+    </p>
+    <p>
+        We can then access each item of the array using its integer index:
+        <code>puts my_array[0]   #prints "Hurrah"</code>
+    </p>
+
+    <p>
+      Hashes on the other hand are described by <a href="http://ruby-doc.org/core-2.2.0/Hash.html">Ruby docs</a> as a "dictionary-like collection of unique keys and their values. Also called associative arrays, they are similar to Arrays, but where an Array uses integers as its index, a Hash allows you to use any object type."
+    </p>
+    <p>
+      The notable difference here is that the keys of a Hash cah be any object type, whereas an array must be indexed with integers.  For example, see how we declare and access the individual items of a hash:
+    </p>
+    <p>
+      <code>
+          options = { font_size: 10, font_family: "Arial" }
+          options[:font_size]  # => 10
+      </code>
+    </p>
+    </section>
+    <section>
+    <p>
+      <b>Usage</b>
+    </p>
+      Arrays and Hashes are used for different tasks.
+    <p>
+    </p>
+      An Array is useful for multi-valued properties.  For example, suppose the property is my favorite music.  This can included multiple values, i.e. <br> <br>
+      <code>
+      music1 = "blues" <br>
+      music2 = "rock" <br>
+      music2 = "bollywood" <br>
+      </code>
+    <p>
+      Now rather than having 3 different variable to store all of my music tastes, we can use an array:
+      <code>
+        music = ["blues", "rock", "bollywood"]
+      </code>
+    </p>
+    <p>
+      Hashes on the other hand, are useful for creating data structures.  For example, suppose I want to represent all the properties of a musical band.  I could create a single Hash with properties for singer, drummer, albums (which could be an array):
+    </p>
+    <p>
+      <code>
+        band = {
+             singer: "Jared",
+             drummer: "Goutham"
+             albums: ["LA heartbreaks", "Cloud songs", "Plant Blues"]
+        }
+      </code>
+    </p>
+    <p>
+    </p>
+    <p>
+    </p>
+
+  </section>
+</main>
+
