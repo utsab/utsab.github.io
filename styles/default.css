@@ -61,3 +61,34 @@
         text-align: center; 
         margin-bottom: 20px; 
     }
+
+
+
+/* contact us */
+
+
+    #email_address {
+        text-align: center; 
+    }
+
+
+    #social_media img {
+        height: 50px; 
+    }
+
+    #social_media a {
+        margin-right: 100px; 
+    }
+
+    #a :last-child {
+        margin-right: 0px
+    }
+
+    #social_media {
+        text-align: center;         
+    }
+
+
+
+
+
