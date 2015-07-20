@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<head>
+  <title>Classes</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="your-stylesheet-link-here.css">
+</head>
+
+<main>
+<h1>When, How, and Why do we use Classes?<h1>
+<h4>July 20, 2015</h4>
+
+<p>
+<b>A brief history of classes and why they exist</b>
+</p>
+
+<p>
+There are two programming styles: procedural and object-oriented.  In the procedural style, you think of the solution as a series of steps, which when executed in the correct sequence, will solve your problem.  This is much like a cooking recipe, i.e. “Step 1 chop up ingredients; Step 2 heat oil in pan; Step 3…”
+</p>
+
+<p>
+Programmers originally adopted such a procedural style, and the programming languages themselves encouraged the procedural style.  However, as programs become larger and more complex, it become difficult to write and maintain such programs.
+</p>
+
+<p>
+A new type of style merged: object-oriented design.   In object-oriented programming, you think of problem as a series of entities which interact with each other.  For example, I was using a Google Hangout this morning, and such a complex piece of functionality could surely be modeled as a set of objects which interact with each other.  For example, you have a “User” object, a “Chat Window” object, a “Video Stream” object, and so on.
+</p>
+
+<p>
+Each of the above objects can be modeled as a “class”.
+</p>
+
+<p>
+<b>What is a class?</b>
+</p>
+
+<p>
+A class in Ruby can consist of data attributes and methods.   To continue the Google Hangout example above, the User object can be modeled as a class with the following attributes:
+name
+icon
+</p>
+
+<p>
+It can have methods such as:
+mute_audio
+unmute_audio
+</p>
+
+</p>
+An important concept in understanding classes is the difference between the class declaration vs. an instance of the class.  The declaration serves as a blueprint for the class, while the class instances are specific “instances” of the class.   There is only one blueprint but there can be many instances.   In the above example, we have shown the class decleration.   An instance of the class might be a specific User with name=”Utsab”
+</p>
+
+<p>
+<b>How to use a class?</b>
+</p>
+
+<p>
+In the “User” example above, the class declaration in Ruby might look like the following:
+</p>
+
+<code>
+class User <br>
+ &nbsp;&nbsp;&nbsp;&nbsp; def initialize (name, icon) <br>
+   &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;  @name = name <br>
+    &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp; @icon = icon <br>
+  &nbsp;&nbsp;&nbsp;&nbsp; end <br>
+<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;  def mute_audio <br>
+  &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;   #do something <br>
+ &nbsp;&nbsp;&nbsp;&nbsp;  end <br>
+ end <br>
+<br>
+utsab = User.new(“Utsab”, “utsab.png”) <br>
+utsab.mute_audio <br>
+</code>
+
+<p>
+A couple of few points from the above code sample:  First the “initialize” function will run initial setup code for the class.  Second, the instance variables are distinguished by the “@” symbols preceding the variable name.   Finally, we create an instance of the class and call the “mute_audio” method.
+</p>
+
+</main>
+
