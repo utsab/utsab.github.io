@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<head>
+  <title>Functional vs. Object Oriented Programming</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="your-stylesheet-link-here.css">
+</head>
+
+<main>
+  <h1>Functional vs. Objection Oriented Programming</h1>
+  <h4>July 27, 2015</h4>
+
+  <section>
+    <p>
+        Trying to understand the difference between functional vs. object oriented programming has been quite a challenge.  I have read articles on functional programming; I've read articles on objection oriented programming; I then read articles comparing the two.  One major pattern I have noticed is that people are very passionate about this topic!  It feels very politically incorrect to say that one is "better" than the other or that they are mutually exclusive.  No, they are both useful and valuable when one knows how to use them and they can both be used together in the same program with good effect.
+    </p>
+    <p>
+        So what <i>is</i> the difference between functional and OOP?  One concept I have learned is that functional programming has a strict philosophy on the behavior of functions and state.  Specfically, state is immutable.   Therefore, a function cannot be influenced by any external state that my change from function call to function call.  Therefore, the behavior of a given function for a given set of inputs always produces the same output. This advantage of this consistent behavior of functions is that one can create very complex programs were many separate function can run concurrently without influencing one another.  This consistency is not a requirement of OOP.
+    </p>
+    <p>
+        One side effect of this immutable-state property is that there is effectively no assignment operator.  Since you can't change state, why bother having an assignment operator?   Now you can change state in functional programming, but it must be a highly disciplined thought-out decision regarding the consequences.  A functional programming language therefore typically makes the programmer jump through hoops in order to change the state of a variable.
+    </p>
+    <p>
+        When to use one or the other?  <a href="http://stackoverflow.com/questions/2078978/functional-programming-vs-object-oriented-programming">This thread</a> explains that you would use functional programming when you have a fixed set of things but the behavior may change, whereas you would use OOP when you have set of "operations on things" and you may primarily be adding more objects as your code evolves.
+    </p>
+
+  </section>
+</main>
+
