@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<head>
+  <title>Ruby Classes vs. Javascript Objects</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="your-stylesheet-link-here.css">
+</head>
+
+<main>
+  <h1>Ruby Classes vs. Javascript Objects</h1>
+  <h4>August 8, 2015</h4>
+
+  <section>
+    <p>  
+        Ruby and Javascript both have the concept of "objects".  Their goals are similar: to encapsulate a group of related variables and methods.  Ruby, on the one hand, is a class-based language and has much baked in support for class objects.  Javascrip, on the other hand, is not a class-based language, but with some effort it can approximate class functionality.  
+    </p>
+    <p>
+        One way this difference manifests is that Ruby has many convenient encapsulating features.  It offers a layer of protection against outsiders from acessing its internal class variables.  It offers the attr_reader, attr_writer methods to regulate access.  In Javascript, there all properties of an object are public.     
+    </p>
+
+    <p>
+        Now let's look at object creation.  In Ruby you use the <ClassName>.new syntaxt to create a new instance of a class.  In javascript, there are two ways of declaring a class.  You can either use the object literal notation, or you can use the class constructor notation.  Although they both use the word "new", they mean different things in each language.  In Ruby, "new" is a method of the class object, whereas in javscript, "new" is a keyword of the language itself.   In Ruby, calling "new" executes the code in the "initialize" method, whereas in javascript, everything inside the function constructor gets executed.  Additionally, in javascript, calling "new" does some fancy things with binding the scope of "this" to the object itself.  Ruby does have a "self" variable which also gets binded to the class object.  However, the scoping rules in javascript are a bit more complex than in Ruby.  
+    </p>
+    <p>
+    
+    </p>
+    <p>
+       Adding methods to objects is a bit more cumbersome in javascript.  One has to make use of the "prototype" property of objects.  In Ruby, one can simply declare the methods inside the class.  
+    </p>
+        </section>
+</main>
+
+</body>
+
+</html>
