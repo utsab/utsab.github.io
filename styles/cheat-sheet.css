@@ -1,0 +1,31 @@
+
+    header {
+        text-align:center; 
+        padding: 40px; 
+    }
+  
+    #canvas {
+        max-width:900px; 
+        margin: 0px auto; 
+    }
+
+    .divider {
+        padding-top: 10px;
+        border-bottom: 1px solid #dddddd; 
+    }
+
+    #cheatSheetTitle {
+         font-size: 24px; 
+    }
+   
+    #left-side {
+        float: left; 
+        width: 49%; 
+    }
+
+    #right-side {
+        float: right; 
+        width: 49%; 
+    }
+
+
